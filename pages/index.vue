@@ -11,13 +11,16 @@
         </Button>
           <Button
             :isLoading="isLoading"
-            :type="'secondary'"
+            type="secondary"
             :disabled="false"
             class="py-0"
             @click="console.log('I pressed a button!')"
             >
             Click Me
           </Button>
+            <Anchor type='primary' link='/test'>
+            I'm a link!
+            </Anchor>
       </div>
     </section>
   </div>
@@ -25,11 +28,12 @@
 
 <script>
   import Button from '../components/Button.vue'; 
-
+  import Anchor from '../components/Anchor.vue';
   export default {
     name: 'Index',
     components: {
-      Button
+      Button,
+      Anchor
     },
     data() {
       return {
