@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="bg-black w-screen h-screen grid place-items-center">
+    <section class="bg-black w-screen h-screen grid place-items-center back">
       <div class="grid gap-4">
         <Button
           :isLoading="isLoading"
